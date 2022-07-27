@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="425.0" prefWidth="602.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ListaReagenteControle">
+   <children>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" />
+      <TableView fx:id="tableViewReagente" prefHeight="307.0" prefWidth="602.0">
+        <columns>
+          <TableColumn fx:id="tableColumnCodigo" prefWidth="60.0" text="Código" />
+          <TableColumn fx:id="tableColumnSubstancia" prefWidth="103.0" text="Substância" />
+            <TableColumn fx:id="tableColumnFabricante" prefWidth="75.0" text="Fabricante" />
+            <TableColumn fx:id="tableColumnUnidade" prefWidth="75.0" text="Unidade" />
+            <TableColumn fx:id="tableColumnQuantidade" prefWidth="75.0" text="Quantidade" />
+            <TableColumn fx:id="tableColumnLocal" prefWidth="75.0" text="Local" />
+            <TableColumn fx:id="tableColumnData" prefWidth="75.0" text="Data" />
+            <TableColumn fx:id="tableColumnUsuario" prefWidth="75.0" text="Usuário" />
+        </columns>
+      </TableView>
+   </children>
+</VBox>
