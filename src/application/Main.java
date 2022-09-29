@@ -15,7 +15,6 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		try {
-			
 			ScrollPane scrollPane = FXMLLoader.load(getClass().getResource("/gui/MainView.fxml"));
 			scrollPane.setFitToHeight(true);
 			scrollPane.setFitToWidth(true);
