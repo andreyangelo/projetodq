@@ -12,6 +12,8 @@ public class Main extends Application {
 	
 	private static Scene mainScene;
 	
+	//teste
+	
 	@Override
 	public void start(Stage primaryStage) {
 		try {
