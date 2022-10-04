@@ -63,6 +63,7 @@ public class ReagenteFormController implements Initializable{
 		this.service = service;
 	}
 	
+	//botão adiciona no estoque
 	@FXML
 	public void onBtSalvalAction() {
 		//int id;

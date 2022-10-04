@@ -204,6 +204,7 @@ public class ReagenteDaoJDBC implements ReagenteDao{
 		}
 	}
 	
+	//adiciona no estoque de reagente
 	@Override
 	public void plus_stock_reagente(Reagente inserido) {
 		
@@ -233,7 +234,8 @@ public class ReagenteDaoJDBC implements ReagenteDao{
 		}
 	}
 
-
+	
+	//subtrai do estoque de reagente
 	@Override
 	public void minus_stock_reagente(Reagente retirado) {
 		

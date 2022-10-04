@@ -63,6 +63,7 @@ public class ReagenteFormOutController implements Initializable{
 		this.service = service;
 	}
 	
+	//botão subtrai do estoque
 	@FXML
 	public void onBtSalvalAction() {
 		//int id;

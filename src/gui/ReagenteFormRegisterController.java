@@ -61,6 +61,7 @@ public class ReagenteFormRegisterController implements Initializable{
 		this.service = service;
 	}
 	
+	//registra na tabela geral de reagentes
 	@FXML
 	public void onBtSalvalAction() {
 		entity = new Reagente();
@@ -72,7 +73,7 @@ public class ReagenteFormRegisterController implements Initializable{
 		
 		try {
 			entity = getFormData();
-			//service.register_reagente(entity);
+			service.register_reagente(entity);
 			Alerts.showInformation("Reagente", "Salvo");
 		}
 		catch(DbException e) {
@@ -91,13 +92,13 @@ public class ReagenteFormRegisterController implements Initializable{
 	@Override
 	public void initialize(URL uri, ResourceBundle rb) {
 		initializeNodes();
-		
 	}
 	
 	public void initializeNodes() {
 		
 	}
 	
+	//pega do formulario para depois inserir no banco de dados
 	private Reagente getFormData() {
 		Reagente obj = new Reagente();
 		obj.setResponsavel("Paulo Couceiro");
@@ -114,6 +115,7 @@ public class ReagenteFormRegisterController implements Initializable{
 		return obj;
 	}
 	
+	//insere valores do reagente no formulario apos a busca
 	public void updateFormData() {
 		if(entity == null) {
 			throw new IllegalStateException("Entity was null");
