@@ -8,7 +8,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.ScrollPane;
 import javafx.stage.Stage;
 
-//atualizado em 03-10-2022
+//atualizado em 06-10-2022
 public class Main extends Application {
 	
 	private static Scene mainScene;
